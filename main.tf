@@ -3,7 +3,7 @@
 
 provider "digitalocean" {}
   
-
+/*
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -27,4 +27,10 @@ resource "aws_instance" "ubuntu" {
   tags = {
     Name = var.instance_name
   }
+}*/
+
+data "digitalocean_account" "sajid" {
+}
+data "digitalocean_image" "example1" {
+  name = "example-1.0.0"
 }
